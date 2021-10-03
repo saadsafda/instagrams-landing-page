@@ -28,7 +28,7 @@ const Navbar = () => {
         </li>
       ) : (
         <li onClick={openForms}>
-                Register/Login
+                Login
         </li>
       )
     ) : (
