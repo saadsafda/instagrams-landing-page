@@ -1,15 +1,16 @@
-  
-import React from "react";
+import React, {Suspense, lazy} from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Model from "./components/Model";
-import Stories from "./components/Stories";
-import Create from "./components/Create";
-import Posts from "./components/Posts";
-import Sidebar from "./components/Sidebar";
 import Context from "./Global/Context";
+const Navbar = lazy(() => import('./components/Navbar'));
+const Model = lazy(() => import('./components/Model'));
+const Stories = lazy(() => import('./components/Stories'));
+const Create = lazy(() => import('./components/Create'));
+const Posts = lazy(() => import('./components/Posts'));
+const Sidebar = lazy(() => import('./components/Sidebar'));
+
 function App() {
   return (
+    <Suspense fallback="loading..." >    
     <Context>
       <Navbar />
       <div className="container">
@@ -20,6 +21,8 @@ function App() {
       </div>
       <Model />
     </Context>
+    </Suspense>
+
   );
 }
 
