@@ -1,3 +1,3 @@
 # instagrams
 
-#### Landiing Page
+#### Landing Page
