@@ -1,6 +1,6 @@
 {
     "name": "instagram",
-    "homepage": "https://instagram.github.io/my-app",
+    "homepage": "https://instagram.github.io/instagrams-landing-page",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
